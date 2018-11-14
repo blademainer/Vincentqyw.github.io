@@ -151,12 +151,12 @@
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/33298717.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/53626485.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/95592762.png">
-<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/75689322.png">
+<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/75689322.jpg">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/22279699.png">
-<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/63404628.png">
+<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/63404628.jpg">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/82101608.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/40479799.png">
-<meta property="og:updated_time" content="2018-11-14T14:17:58.841Z">
+<meta property="og:updated_time" content="2018-11-14T15:57:59.442Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CNN框架(CNN Architectures)">
 <meta name="twitter:description" content="本文来自于CS231N（2017 Spring），将介绍几种较为常见的CNN结构。以下网络均是ImageNet比赛的冠军之作，我们将从网络结构，参数规模，运算量等来描述各个网络的特点。">
@@ -452,7 +452,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-14T22:17:58+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-14T23:57:59+08:00">
                 2018-11-14
               </time>
             
@@ -679,7 +679,7 @@
 <li>ILSVRC’14 classification winner (6.7% top 5 error)</li>
 </ul>
 <h3 id="“Inception-module”"><a href="#“Inception-module”" class="headerlink" title="“Inception module”"></a>“Inception module”</h3><p>精心设计了一个局部网络模块，并且将这些模块叠加构成GoolgeNet。这种经过精心设计的模块就是Inception。（design a good local network topology (network within a network) and then stack these modules on top of each other）。<br>Inception包含几个接受域不同的CONV核（1*1，3*3，5*5）以及池化操作（3*3）；最终将这些操作后的输出在depth方向串联。以下是两种两种不同的实现方式，左图时原始的inception模块，右图是改进版的inception模块。<br><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/33298717.png" alt="inception"><br>对于naive inception而言，它面临这运算量巨大的问题。由于池化层的输出会保留原始输入的depth，所以经过CONV&amp;MAXPOOL过后的输出的feature map势必比原始输入的depth更深。<br><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/53626485.png" alt="inception-naive"><br>那么如何去解决以上问题呢，一个通常的方式就是降维。我们在每个CONV前加上1*1的CONV（“bottleneck” layers）来减少feature map的维度。所谓的1*1CONV就是在保持输入的空间分辨率不变的情况下来减小depth维度，即通过将不同depth上的feature map进行组合，从而将输入的feature map映射到更低的depth维度上。经过以上操作就可以将运算的操作次数大大降低。<br><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/95592762.png" alt="inception-improve"></p>
-<p>于是GoogLeNet的全貌如下：<br><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/75689322.png" alt="googlenet"></p>
+<p>于是GoogLeNet的全貌如下：<br><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/75689322.jpg" alt="googlenet"></p>
 <h2 id="ResNet"><a href="#ResNet" class="headerlink" title="ResNet"></a>ResNet</h2><p>利用<strong>残差</strong>连接成的超级深网络。<br>这里有一个何凯明在ICML2016的Tutorial，内容比较详细。<a href="http://kaiminghe.com/icml16tutorial/index.html" target="_blank" rel="external">ICML 2016 Tutorial on Deep Residual Networks</a><br>代码在这里<a href="https://github.com/KaimingHe/deep-residual-networks" target="_blank" rel="external">Code: deep-residual-networks</a></p>
 <h3 id="概况"><a href="#概况" class="headerlink" title="概况"></a>概况</h3><ul>
 <li>152-layer model for ImageNet</li>
@@ -687,7 +687,7 @@
 <li>Swept all classification and detection competitions in ILSVRC’ 15 and COCO’ 15!</li>
 </ul>
 <h3 id="深度增加带来的问题"><a href="#深度增加带来的问题" class="headerlink" title="深度增加带来的问题"></a>深度增加带来的问题</h3><p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/22279699.png" alt="deeper-nets-problems"><br>从上图可以发现，当网络层数增加时，训练误差和测试误差都有所下降。这并不符合以往的经验，我们会想，既然网络层数增加了，那么模型参数势必增多，此时会造成过拟合。然而过拟合的表现是：训练误差减小，测试误差增大。但是事实和分析并不吻合。<br>何凯明认为：<strong>The problem is an optimization problem, deeper models are harder to optimize</strong>。这是一个优化问题，更深的网络更难优化。并且，更深的网络应该至少比浅层网络不差，这是因为我们可以通过拷贝浅层网络+identity mapping（恒等映射）来构造一个更深的网络，这个结构化的方案表明深层网络可以达到和浅层网络一致的性能。</p>
-<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/63404628.png" alt="resnet-layer"><br>Use network layers to fit a residual mapping instead of directly trying to fit a desired underlying mapping.<br>作者假设：<strong>相较于最优化最初的无参照映射（残差函数以输入x作为参照），最优化残差映射是更容易的</strong>。利用网络去拟合残差$F(x)$，并非直接拟合$H(x)$。</p>
+<h3 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h3><p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/63404628.jpg" alt="resnet-layer"><br>Use network layers to fit a residual mapping instead of directly trying to fit a desired underlying mapping.<br>作者假设：<strong>相较于最优化最初的无参照映射（残差函数以输入x作为参照），最优化残差映射是更容易的</strong>。利用网络去拟合残差$F(x)$，并非直接拟合$H(x)$。</p>
 <h3 id="整个ResNet框架"><a href="#整个ResNet框架" class="headerlink" title="整个ResNet框架"></a>整个ResNet框架</h3><p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/CNN-Architectures/82101608.png" alt="resnet-structure"></p>
 <ul>
 <li>Stack residual blocks</li>

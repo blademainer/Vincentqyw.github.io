@@ -144,13 +144,13 @@
 <meta property="og:site_name" content="Vincent Qin">
 <meta property="og:description" content="最近对深度学习尤其着迷，是时候用万能的Matlab去践行我的DL学习之路了。之所以用Matlab，是因为Matlab真的太强大了！自从大学开始我就一直用这个神奇的软件，算是最熟悉的编程工具。加上最近mathworks公司一大波大佬的不懈努力，在今年下半年发行的R2017b版本中又加入了诸多新颖的特性，尤其在DL方面，可以发现：仅仅几条简单的代码，就能够实现复杂的功能。基于以上，我在本文列举了几个">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/cifar10-fig.jpg">
-<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/63361958.jpg">
+<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/63361958.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/weight-layer2.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/weight-inf.gif">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/cifar10-images.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/cifar10-weight-layer2.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/resnet34.png">
-<meta property="og:updated_time" content="2018-11-14T15:07:37.201Z">
+<meta property="og:updated_time" content="2018-11-14T15:54:31.609Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Matlab Deep Learning学习笔记">
 <meta name="twitter:description" content="最近对深度学习尤其着迷，是时候用万能的Matlab去践行我的DL学习之路了。之所以用Matlab，是因为Matlab真的太强大了！自从大学开始我就一直用这个神奇的软件，算是最熟悉的编程工具。加上最近mathworks公司一大波大佬的不懈努力，在今年下半年发行的R2017b版本中又加入了诸多新颖的特性，尤其在DL方面，可以发现：仅仅几条简单的代码，就能够实现复杂的功能。基于以上，我在本文列举了几个">
@@ -446,7 +446,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-14T23:07:37+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-14T23:54:31+08:00">
                 2018-11-14
               </time>
             
@@ -522,7 +522,7 @@
 </ul>
 <h3 id="加载图像数据"><a href="#加载图像数据" class="headerlink" title="加载图像数据"></a>加载图像数据</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">digitDatasetPath = fullfile(matlabroot,<span class="string">'toolbox'</span>,<span class="string">'nnet'</span>,<span class="string">'nndemos'</span>,...</div><div class="line">    <span class="string">'nndatasets'</span>,<span class="string">'DigitDataset'</span>);</div><div class="line"><span class="comment">% imageDatastore函数 能够通过文件夹名自动地把数据存储成ImageDatastore 对象</span></div><div class="line">digitData = imageDatastore(digitDatasetPath,...</div><div class="line">    <span class="string">'IncludeSubfolders'</span>,true,<span class="string">'LabelSource'</span>,<span class="string">'foldernames'</span>);</div><div class="line"></div><div class="line"><span class="comment">% Display some of the images in the datastore.</span></div><div class="line">figure;</div><div class="line">perm = randperm(<span class="number">10000</span>,<span class="number">25</span>);</div><div class="line"><span class="keyword">for</span> <span class="built_in">i</span> = <span class="number">1</span>:<span class="number">25</span></div><div class="line">    subplot(<span class="number">5</span>,<span class="number">5</span>,<span class="built_in">i</span>);</div><div class="line">    imshow(digitData.Files&#123;perm(i)&#125;);</div><div class="line"><span class="keyword">end</span></div></pre></td></tr></table></figure>
 <p>以下是手写字符的部分数据：</p>
-<p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/63361958.jpg" alt=""></p>
+<p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/Matlab-Deep-Learning/63361958.png" alt=""></p>
 <h3 id="创建训练集与验证集"><a href="#创建训练集与验证集" class="headerlink" title="创建训练集与验证集"></a>创建训练集与验证集</h3><figure class="highlight matlab"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">trainNumFiles = <span class="number">750</span>;</div><div class="line">[trainDigitData,valDigitData] = splitEachLabel(digitData,<span class="number">750</span>,<span class="string">'randomize'</span>); </div><div class="line"><span class="comment">% 每类有1000个，选择其中的750类作为训练集，剩下的作为验证集；此处750可以换成一个比例：75%</span></div></pre></td></tr></table></figure>
 <p>注意Matlab里面支持的<strong>层</strong>的类型，包括：<a href="https://cn.mathworks.com/help/nnet/ref/nnet.cnn.layer.layer.html?searchHighlight=softmaxlayer&amp;s_tid=doc_srchtitle" target="_blank" rel="external">CLICK THIS LINK</a>。如下所示：</p>
 <div class="table-container">

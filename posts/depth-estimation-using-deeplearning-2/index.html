@@ -143,7 +143,7 @@
 <meta property="og:url" content="https://www.vincentqin.tech/posts/depth-estimation-using-deeplearning-2/index.html">
 <meta property="og:site_name" content="Vincent Qin">
 <meta property="og:description" content="最近一段时间一直痴迷于如何将深度学习用于深度估计，看了不少关于该方面的介绍，再次做一个简单的总结。虽说深度学习和深度估计都有深度二字，但是其意义确是完全不一样。一个是deep一个是depth，前者表示网络层纵向的延伸度，后者表示三维场景中物体距离摄像头的距离。这两个差异如此之大的名词是如何结合在一起的呢？且听我慢慢解释。">
-<meta property="og:image" content="https://www.vincentqin.tech/posts/depth-estimation-using-deeplearning-2/wonderwomanv3.jpg">
+<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/wonderwomanv3.jpg">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/flow-net-structure.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/flownet-simple.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/flownet-corr.png">
@@ -151,11 +151,11 @@
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/disp-flow.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/dispnet.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/dispnet-res.png">
-<meta property="og:updated_time" content="2018-11-14T14:30:38.866Z">
+<meta property="og:updated_time" content="2018-11-14T15:52:35.449Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="深度学习在深度(视差)估计中的应用(2)">
 <meta name="twitter:description" content="最近一段时间一直痴迷于如何将深度学习用于深度估计，看了不少关于该方面的介绍，再次做一个简单的总结。虽说深度学习和深度估计都有深度二字，但是其意义确是完全不一样。一个是deep一个是depth，前者表示网络层纵向的延伸度，后者表示三维场景中物体距离摄像头的距离。这两个差异如此之大的名词是如何结合在一起的呢？且听我慢慢解释。">
-<meta name="twitter:image" content="https://www.vincentqin.tech/posts/depth-estimation-using-deeplearning-2/wonderwomanv3.jpg">
+<meta name="twitter:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/wonderwomanv3.jpg">
 
 
 
@@ -447,7 +447,7 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-14T22:30:38+08:00">
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-14T23:52:35+08:00">
                 2018-11-14
               </time>
             
@@ -509,7 +509,7 @@
       
 
       
-        <p><img src="wonderwomanv3.jpg" alt=""></p>
+        <p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/depth-estimation-using-deeplearning-2/wonderwomanv3.jpg" alt=""></p>
 <div class="note success"><p>最近一段时间一直痴迷于如何将深度学习用于深度估计，看了不少关于该方面的介绍，再次做一个简单的总结。虽说<code>深度学习</code>和<code>深度估计</code>都有<code>深度</code>二字，但是其意义确是完全不一样。一个是<code>deep</code>一个是<code>depth</code>，前者表示网络层纵向的延伸度，后者表示三维场景中物体距离摄像头的距离。这两个差异如此之大的名词是如何结合在一起的呢？且听我慢慢解释。</p></div>
 <a id="more"></a>
 <p>深度学习的历史在此不做介绍，我们只关心深度学习在深度估计的方面的成果。在开始之前要到一个著名的网络<strong><a href="https://lmb.informatik.uni-freiburg.de/Publications/2015/DFIB15/" target="_blank" rel="external">FlowNet</a></strong>，这是<em>Dosovitskiy</em>等人发表在<strong>ICCV2015</strong>上的作品。这篇文章其实就是做了两件事情：1. 建立了两种结构的FlowNet；2. 建立了一个虚拟场景训练集（Flying Chairs）。最后的测试效果还不错，虽说仅仅在这个数据集上进行了训练，但是泛化能力能够达到业界水平。</p>

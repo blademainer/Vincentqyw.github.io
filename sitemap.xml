@@ -2,6 +2,62 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.vincentqin.tech/posts/stephen-hawking/</loc>
+    
+    <lastmod>2018-11-14T16:28:20.735Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
+    
+    <lastmod>2018-11-14T16:24:34.326Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/new-hci-lightfield-datasets/</loc>
+    
+    <lastmod>2018-11-14T16:06:21.075Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/lstm/</loc>
+    
+    <lastmod>2018-11-14T16:04:16.019Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/CNN-Architectures/</loc>
+    
+    <lastmod>2018-11-14T15:57:59.442Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/Matlab-Deep-Learning/</loc>
+    
+    <lastmod>2018-11-14T15:54:31.609Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/depth-estimation-using-deeplearning-2/</loc>
+    
+    <lastmod>2018-11-14T15:52:35.449Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/some-useful-tools/</loc>
+    
+    <lastmod>2018-11-14T15:52:02.536Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.vincentqin.tech/posts/tsinghua-google-ai/</loc>
     
     <lastmod>2018-11-14T15:30:30.997Z</lastmod>
@@ -23,20 +79,6 @@
   </url>
   
   <url>
-    <loc>https://www.vincentqin.tech/posts/stephen-hawking/</loc>
-    
-    <lastmod>2018-11-14T15:22:36.532Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/some-useful-tools/</loc>
-    
-    <lastmod>2018-11-14T15:20:53.987Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.vincentqin.tech/posts/SIFT-and-SURF/</loc>
     
     <lastmod>2018-11-14T15:14:54.730Z</lastmod>
@@ -51,30 +93,9 @@
   </url>
   
   <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    
-    <lastmod>2018-11-14T15:11:41.346Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.vincentqin.tech/posts/new-pc/</loc>
     
     <lastmod>2018-11-14T15:11:33.443Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/new-hci-lightfield-datasets/</loc>
-    
-    <lastmod>2018-11-14T15:10:11.106Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/Matlab-Deep-Learning/</loc>
-    
-    <lastmod>2018-11-14T15:07:37.201Z</lastmod>
     
   </url>
   
@@ -89,13 +110,6 @@
     <loc>https://www.vincentqin.tech/posts/lytro-light-field/</loc>
     
     <lastmod>2018-11-14T15:04:48.825Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/lstm/</loc>
-    
-    <lastmod>2018-11-14T15:01:28.015Z</lastmod>
     
   </url>
   
@@ -149,13 +163,6 @@
   </url>
   
   <url>
-    <loc>https://www.vincentqin.tech/posts/depth-estimation-using-deeplearning-2/</loc>
-    
-    <lastmod>2018-11-14T14:30:38.866Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.vincentqin.tech/posts/depth-estimation-using-deeplearning-1/</loc>
     
     <lastmod>2018-11-14T14:26:39.770Z</lastmod>
@@ -170,13 +177,6 @@
   </url>
   
   <url>
-    <loc>https://www.vincentqin.tech/posts/CNN-Architectures/</loc>
-    
-    <lastmod>2018-11-14T14:17:58.841Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.vincentqin.tech/posts/AR-applications/</loc>
     
     <lastmod>2018-11-14T14:12:35.208Z</lastmod>
@@ -184,9 +184,9 @@
   </url>
   
   <url>
-    <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
     
-    <lastmod>2018-11-13T15:41:49.716Z</lastmod>
+    <lastmod>2018-11-13T17:00:08.056Z</lastmod>
     
   </url>
   
