@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    
+    <lastmod>2018-11-18T11:40:28.649Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
     
     <lastmod>2018-11-18T10:26:57.157Z</lastmod>
@@ -187,13 +194,6 @@
     <loc>https://www.vincentqin.tech/posts/AR-applications/</loc>
     
     <lastmod>2018-11-14T14:12:35.208Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    
-    <lastmod>2018-11-13T17:00:08.056Z</lastmod>
     
   </url>
   

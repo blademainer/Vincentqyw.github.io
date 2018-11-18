@@ -180,8 +180,8 @@ th {
   padding: 0;
 }
 ::selection {
-  background: $selection-bg;
-  color: $selection-color;
+  background: #ffdc35;
+  color: #272727;
 }
 body {
   position: relative;
@@ -2011,7 +2011,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #5e9e3b;
+  background: #d6ff6b;
 }
 .links-of-blogroll {
   font-size: 13px;
