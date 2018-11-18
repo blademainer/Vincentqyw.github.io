@@ -4,6 +4,51 @@
 
     
   <url>
+    <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
+    <lastmod>2018-11-18T10:26:57.157Z</lastmod>
+    <data>
+        <display>
+        <title>HEXO建站备忘录</title>
+        <pubTime>2016-08-09T04:37:42.000Z</pubTime>
+        
+        <tag>github</tag>
+         
+        <tag>coding</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="建站" url="https://www.vincentqin.tech/categories/%E5%BB%BA%E7%AB%99/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/stereo-vision-overview/</loc>
+    <lastmod>2018-11-18T10:15:45.229Z</lastmod>
+    <data>
+        <display>
+        <title>立体视觉综述：Stereo Vision Overview</title>
+        <pubTime>2018-03-26T07:03:55.000Z</pubTime>
+        
+        <tag>stereo matching</tag>
+         
+        <tag>computer vision</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.vincentqin.tech/posts/line-segments-detection/</loc>
     <lastmod>2018-11-18T09:32:24.430Z</lastmod>
     <data>
@@ -36,32 +81,6 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
-    <lastmod>2018-11-14T16:24:34.326Z</lastmod>
-    <data>
-        <display>
-        <title>HEXO建站备忘录</title>
-        <pubTime>2016-08-09T04:37:42.000Z</pubTime>
-        
-        <tag>github</tag>
-         
-        <tag>coding</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="https://www.vincentqin.tech/categories/%E5%BB%BA%E7%AB%99/"/>
-          
         </display>
     </data>
     </url>
@@ -245,25 +264,6 @@
              
               <breadCrumb title="机器学习" url="https://www.vincentqin.tech/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/stereo-vision-overview/</loc>
-    <lastmod>2018-11-14T15:24:47.972Z</lastmod>
-    <data>
-        <display>
-        <title>立体视觉综述：Stereo Vision Overview</title>
-        <pubTime>2018-03-26T07:03:55.000Z</pubTime>
-        
-        <tag>stereo matching</tag>
-         
-        <tag>computer vision</tag>
-         
-         
-           
         </display>
     </data>
     </url>

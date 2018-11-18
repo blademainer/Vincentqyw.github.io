@@ -143,11 +143,11 @@
 <meta property="og:url" content="https://www.vincentqin.tech/posts/stereo-vision-overview/index.html">
 <meta property="og:site_name" content="Vincent Qin">
 <meta property="og:description" content="本文主要翻译自Mattoccia的双目视差估计综述，对于刚刚接触立体深度估计方向的小伙伴会有帮助；如果你是专家也可以做一下复习，如有错误请在评论中指出。文中主要介绍以下几个方面的内容：  Introduction to stereo vision Overview of a stereo vision system Algorithms for visual correspondence Com">
-<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/depth-overview-cover.jpg">
+<meta property="og:image" content="https://www.vincentqin.tech/posts/stereo-vision-overview/depth-overview-cover.jpg">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p6.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p8.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p9.png">
-<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/Epipolar_geometry.svg">
+<meta property="og:image" content="https://www.vincentqin.tech/posts/stereo-vision-overview/Epipolar_geometry.svg">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p10.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p11.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p12.png">
@@ -218,11 +218,11 @@
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p170.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p181.png">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/p183.png">
-<meta property="og:updated_time" content="2018-11-14T15:24:47.972Z">
+<meta property="og:updated_time" content="2018-11-18T10:15:45.229Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="立体视觉综述：Stereo Vision Overview">
 <meta name="twitter:description" content="本文主要翻译自Mattoccia的双目视差估计综述，对于刚刚接触立体深度估计方向的小伙伴会有帮助；如果你是专家也可以做一下复习，如有错误请在评论中指出。文中主要介绍以下几个方面的内容：  Introduction to stereo vision Overview of a stereo vision system Algorithms for visual correspondence Com">
-<meta name="twitter:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/depth-overview-cover.jpg">
+<meta name="twitter:image" content="https://www.vincentqin.tech/posts/stereo-vision-overview/depth-overview-cover.jpg">
 
 
 
@@ -514,8 +514,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-14T23:24:47+08:00">
-                2018-11-14
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-18T18:15:45+08:00">
+                2018-11-18
               </time>
             
           </span>
@@ -576,7 +576,7 @@
       
 
       
-        <p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/depth-overview-cover.jpg" alt=""></p>
+        <p><img src="/posts/stereo-vision-overview/depth-overview-cover.jpg" width="1600px"></p>
 <p>本文主要翻译自<a href="www.vision.deis.unibo.it/smatt">Mattoccia</a>的双目视差估计综述，对于刚刚接触立体深度估计方向的小伙伴会有帮助；如果你是专家也可以做一下复习，如有错误请在评论中指出。文中主要介绍以下几个方面的内容：</p>
 <ul>
 <li>Introduction to stereo vision</li>
@@ -602,7 +602,7 @@
 <li>对于参考图像R而言，现实场景中的P与Q点在其像平面${\pi}_R$上被投影成为一个点p=q。</li>
 <li>极线约束规定，属于（红色）视线的点对应位于目标图像T的图像平面${\pi}_T$上的绿线上。</li>
 </ul>
-<p>我们可以在维基百科上找到更为详细的<a href="https://en.wikipedia.org/wiki/Epipolar_geometry" target="_blank" rel="external">介绍</a>，具体描述可见下图。特别感谢<a href="https://blog.csdn.net/lin453701006/article/details/55096777" target="_blank" rel="external">@岳麓吹雪同学</a>的帮忙，以下是他已经整理好的译文。下图是针孔相机模型图。两个针孔相机看向空间点，实际相机的像面位于焦点中心后面，生成了一幅关于透镜的焦点中心对称的图像。<strong>这个问题可以简化为在焦点中心前方放置一个虚拟像面来生成正立图像，而不需要对称变换得到</strong>。$O_L$和$O_R$表示两个相机透镜中心，$X$表示两个相机共同的目标点，$X_L$和$X_R$是点$X$在两像面上的投影。<br><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/Epipolar_geometry.svg" width="900px"></p>
+<p>我们可以在维基百科上找到更为详细的<a href="https://en.wikipedia.org/wiki/Epipolar_geometry" target="_blank" rel="external">介绍</a>，具体描述可见下图。特别感谢<a href="https://blog.csdn.net/lin453701006/article/details/55096777" target="_blank" rel="external">@岳麓吹雪同学</a>的帮忙，以下是他已经整理好的译文。下图是针孔相机模型图。两个针孔相机看向空间点，实际相机的像面位于焦点中心后面，生成了一幅关于透镜的焦点中心对称的图像。<strong>这个问题可以简化为在焦点中心前方放置一个虚拟像面来生成正立图像，而不需要对称变换得到</strong>。$O_L$和$O_R$表示两个相机透镜中心，$X$表示两个相机共同的目标点，$X_L$和$X_R$是点$X$在两像面上的投影。<br><img src="/posts/stereo-vision-overview/Epipolar_geometry.svg" width="1600px"></p>
 <ul>
 <li><p><strong>epipolar points极点</strong><br>每一个相机的透镜中心是不同的，会投射到另一个相机像面的不同点上。这两个像点用$e_L$和$e_R$表示，被称为<strong>epipolar points极点</strong>。两个极点$e_L$、$e_R$分别与透镜中心$O_L$、$O_R$在空间中位于一条直线上。</p>
 </li>
@@ -1129,10 +1129,6 @@
   
 	
   
-    <div class="comments" id="comments">
-      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzQ2OC8xNDAwMA"></div>
-    </div>
-  
 
   
 
@@ -1565,26 +1561,45 @@ show_date_time();
 
 
   
+
+
+
+
+
+
+
+
+
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    
     <script type="text/javascript">
-      (function(d, s) {
-        var j, e = d.getElementsByTagName(s)[0];
-        if (typeof LivereTower === 'function') { return; }
-        j = d.createElement(s);
-        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-        j.async = true;
-        e.parentNode.insertBefore(j, e);
-      })(document, 'script');
-    </script>
-  
-
-
-
-
-
-
-
-
-
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        lang:'en',
+        verify: false,
+        notify: false,
+        appId: 'gW2gPJn72UA5SIcq03J1SD94-gzGzoHsz',
+        appKey: 'qRCCImMfpduRBJN8FRj8pJF4',
+        placeholder: 'Just go go',
+        avatar:'retro',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+   
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+  </script>
 
 
 

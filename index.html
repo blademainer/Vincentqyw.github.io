@@ -1880,8 +1880,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-11-14T23:24:47+08:00">
-                2018-11-14
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-18T18:15:45+08:00">
+                2018-11-18
               </time>
             
           </span>
@@ -1938,7 +1938,7 @@
 
       
         
-          <p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/stereo-vision-overview/depth-overview-cover.jpg" alt=""></p>
+          <p><img src="/posts/stereo-vision-overview/depth-overview-cover.jpg" width=1600px></p>
 <p>本文主要翻译自<a href="www.vision.deis.unibo.it/smatt">Mattoccia</a>的双目视差估计综述，对于刚刚接触立体深度估计方向的小伙伴会有帮助；如果你是专家也可以做一下复习，如有错误请在评论中指出。文中主要介绍以下几个方面的内容：</p>
 <ul>
 <li>Introduction to stereo vision</li>
@@ -2585,6 +2585,36 @@ show_date_time();
 
 
 
+
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+    
+    <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        lang:'en',
+        verify: false,
+        notify: false,
+        appId: 'gW2gPJn72UA5SIcq03J1SD94-gzGzoHsz',
+        appKey: 'qRCCImMfpduRBJN8FRj8pJF4',
+        placeholder: 'Just go go',
+        avatar:'retro',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+   
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+        item.parentNode.removeChild(item);
+      });
+    }
+  </script>
 
 
 
