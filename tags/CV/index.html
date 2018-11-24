@@ -139,7 +139,7 @@
 <meta name="description" content="Keep Your Curiosity.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Vincent Qin">
-<meta property="og:url" content="https://www.vincentqin.tech/tags/CV/index.html">
+<meta property="og:url" content="https://www.vincentqin.tech/tags/cv/index.html">
 <meta property="og:site_name" content="Vincent Qin">
 <meta property="og:description" content="Keep Your Curiosity.">
 <meta name="twitter:card" content="summary">
@@ -174,13 +174,13 @@
 
 
 
-  <link rel="canonical" href="https://www.vincentqin.tech/tags/CV/"/>
+  <link rel="canonical" href="https://www.vincentqin.tech/tags/cv/"/>
 
 
 
 
 
-  <title>Tag: CV | Vincent Qin</title>
+  <title>Tag: cv | Vincent Qin</title>
   
 
 
@@ -384,7 +384,7 @@
 
     <div id="posts" class="posts-collapse">
       <div class="collection-title">
-        <h1>CV<small>Tag</small>
+        <h1>cv<small>Tag</small>
         </h1>
       </div>
 
@@ -396,9 +396,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/posts/cv-books/" itemprop="url">
+            <a class="post-title-link" href="/posts/line-segments-detection/" itemprop="url">
               
-                <span itemprop="name">CV Related References</span>
+                <span itemprop="name">资料：Line Segments Detection</span>
               
             </a>
         
@@ -406,9 +406,9 @@
 
       <div class="post-meta">
         <time class="post-time" itemprop="dateCreated"
-              datetime="2018-04-13T10:42:57+08:00"
-              content="2018-04-13" >
-          04-13
+              datetime="2018-11-18T15:11:20+08:00"
+              content="2018-11-18" >
+          11-18
         </time>
       </div>
 
@@ -831,28 +831,37 @@ show_date_time();
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://www.vincentqin.tech/css/gitmint-default.css">
-        <script src="https://www.vincentqin.tech/js/src/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
+
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    function showGitalk(){
+        $("#gitalk_title").attr("style","display:none");
+        $("#gitalk_container").attr("style","").addClass("gitalk_container");
+
+        var gitalk = new Gitalk({
+            id: window.location.pathname,
+            clientID: 'fbf87ffe2080934209fc',
+            clientSecret: '23048ae0f682b6e34844f41d2b84d171bb7b2854',
+            repo: 'gitalk',
+            owner: 'Vincentqyw',
+            admin: ['Vincentqyw'],
+            distractionFreeMode: true,
+            body: location.href
+        });
+
+        gitalk.render('gitalk_container');
+    }
 
     
-      <style>
-        a.gitment-editor-footer-tip { display: none; }
-        .gitment-container.gitment-footer-container { display: none; }
-      </style>
+      showGitalk();
     
 
-    
-
-
-
-
-
-
+  </script>
 
 
 

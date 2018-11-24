@@ -656,15 +656,12 @@
           
 
   
+      
+      <div id="gitalk_container" style="display:none;"></div>
+  
 	
   
 
-  
-    <div class="comments" id="comments">
-      
-        <div id="gitment-container"></div>
-      
-    </div>
   
 
   
@@ -1103,52 +1100,37 @@ show_date_time();
 
 
 
-<!-- LOCAL: You can save these files to your site and update links -->
-    
-        
-        <link rel="stylesheet" href="https://www.vincentqin.tech/css/gitmint-default.css">
-        <script src="https://www.vincentqin.tech/js/src/gitmint.browser.js"></script>
-    
-<!-- END LOCAL -->
 
-    
-      <style>
-        a.gitment-editor-footer-tip { display: none; }
-        .gitment-container.gitment-footer-container { display: none; }
-      </style>
-    
 
-    
-      <script type="text/javascript">
-      function renderGitment(){
-        var gitment = new Gitmint({
-            id: window.location.pathname, 
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    function showGitalk(){
+        $("#gitalk_title").attr("style","display:none");
+        $("#gitalk_container").attr("style","").addClass("gitalk_container");
+
+        var gitalk = new Gitalk({
+            id: window.location.pathname,
+            clientID: 'fbf87ffe2080934209fc',
+            clientSecret: '23048ae0f682b6e34844f41d2b84d171bb7b2854',
+            repo: 'gitalk',
             owner: 'Vincentqyw',
-            repo: 'Gitment',
-            
-            lang: "en" || navigator.language || navigator.systemLanguage || navigator.userLanguage,
-            
-            oauth: {
-            
-            
-                client_secret: '31179aa98fb086ba01a75d116fdd2d846cfc9a0d',
-            
-                client_id: '12c4bbcdc09235fdb668'
-            }});
-        gitment.render('gitment-container');
-      }
+            admin: ['Vincentqyw'],
+            distractionFreeMode: true,
+            body: location.href
+        });
 
-      
-      renderGitment();
-      
-      </script>
+        gitalk.render('gitalk_container');
+    }
+
+    
+      showGitalk();
     
 
-
-
-
-
-
+  </script>
 
 
 
