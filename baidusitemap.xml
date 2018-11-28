@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    <lastmod>2018-11-28T14:49:19.942Z</lastmod>
+    <data>
+        <display>
+        <title>NEWS</title>
+        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.vincentqin.tech/posts/lytro-light-field/</loc>
     <lastmod>2018-11-18T14:34:02.269Z</lastmod>
     <data>
@@ -22,21 +37,6 @@
              
               <breadCrumb title="计算机视觉" url="https://www.vincentqin.tech/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    <lastmod>2018-11-18T11:40:28.649Z</lastmod>
-    <data>
-        <display>
-        <title>NEWS</title>
-        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
