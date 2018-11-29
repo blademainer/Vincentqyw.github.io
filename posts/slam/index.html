@@ -123,7 +123,7 @@
 
 
 
-  <meta name="keywords" content="Author: Vincent Qin" />
+  <meta name="keywords" content="slam," />
 
 
 
@@ -136,15 +136,19 @@
 
 
 
-<meta name="description" content="Keep Your Curiosity.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Vincent Qin">
-<meta property="og:url" content="https://www.vincentqin.tech/archives/2017/12/index.html">
+<meta name="description" content="整理还未完备，先祭出这几本书&amp;amp;博客，方便随时查看。  slambook slambook code OpenCV3.0 SLAM前世今生 g2o Github g2o details g2o译文 深入理解图优化与g2o：g2o篇 深入理解图优化与g2o：g2o篇 code 白巧克力亦唯心的博客 Graph slam学习">
+<meta name="keywords" content="slam">
+<meta property="og:type" content="article">
+<meta property="og:title" content="资料：SLAM草稿">
+<meta property="og:url" content="https://www.vincentqin.tech/posts/slam/index.html">
 <meta property="og:site_name" content="Vincent Qin">
-<meta property="og:description" content="Keep Your Curiosity.">
+<meta property="og:description" content="整理还未完备，先祭出这几本书&amp;amp;博客，方便随时查看。  slambook slambook code OpenCV3.0 SLAM前世今生 g2o Github g2o details g2o译文 深入理解图优化与g2o：g2o篇 深入理解图优化与g2o：g2o篇 code 白巧克力亦唯心的博客 Graph slam学习">
+<meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/slam/g2o.png">
+<meta property="og:updated_time" content="2018-11-29T17:29:17.133Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Vincent Qin">
-<meta name="twitter:description" content="Keep Your Curiosity.">
+<meta name="twitter:title" content="资料：SLAM草稿">
+<meta name="twitter:description" content="整理还未完备，先祭出这几本书&amp;amp;博客，方便随时查看。  slambook slambook code OpenCV3.0 SLAM前世今生 g2o Github g2o details g2o译文 深入理解图优化与g2o：g2o篇 深入理解图优化与g2o：g2o篇 code 白巧克力亦唯心的博客 Graph slam学习">
+<meta name="twitter:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/slam/g2o.png">
 
 
 
@@ -174,13 +178,13 @@
 
 
 
-  <link rel="canonical" href="https://www.vincentqin.tech/archives/2017/12/"/>
+  <link rel="canonical" href="https://www.vincentqin.tech/posts/slam/"/>
 
 
 
 
 
-  <title>Archive | Vincent Qin</title>
+  <title>资料：SLAM草稿 | Vincent Qin</title>
   
 
 
@@ -219,7 +223,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 	<a href="https://www.github.com/Vincentqyw" class="github-corner" aria-label="View source on Github"><svg width="80" height="80" viewBox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 	    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -377,110 +381,305 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
-        
-        
-         
-        
-        OK! 32 posts in total. Keep on posting.
-      </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://www.vincentqin.tech/posts/slam/">
 
-      
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Vincent Qin">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/qin.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Vincent Qin">
+    </span>
+
+    
+      <header class="post-header">
 
         
         
+          <h1 class="post-title" itemprop="name headline">资料：SLAM草稿</h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-11-30T00:53:00+08:00">
+                2018-11-30
+              </time>
+            
+
+            
+              <span class="post-meta-divider">|</span>
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Post modified&#58;</span>
+              
+              <time title="Post modified" itemprop="dateModified" datetime="2018-11-30T01:29:17+08:00">
+                2018-11-30
+              </time>
+            
+          </span>
+
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/posts/depth-estimation-using-deeplearning-2/" itemprop="url">
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="name">深度学习在深度(视差)估计中的应用(2)</span>
+                <span class="post-meta-item-text">In</span>
               
-            </a>
-        
-      </h2>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/计算机视觉/" itemprop="url" rel="index">
+                    <span itemprop="name">计算机视觉</span>
+                  </a>
+                </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-10T17:07:19+08:00"
-              content="2017-12-10" >
-          12-10
-        </time>
-      </div>
+                
+                
+              
+            </span>
+          
 
-    </header>
-  </article>
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/slam/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/slam/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
 
+          
+          
+             <span id="/posts/slam/" class="leancloud_visitors" data-flag-title="资料：SLAM草稿">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">Visitors&#58;</span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
 
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/posts/depth-estimation-using-deeplearning-1/" itemprop="url">
-              
-                <span itemprop="name">深度学习在深度(视差)估计中的应用(1)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T23:56:45+08:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
+      
+        <p>整理还未完备，先祭出这几本书&amp;博客，方便随时查看。</p>
+<ul>
+<li><a href="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/slam/slambook14.pdf" target="_blank" rel="external">slambook</a></li>
+<li><a href="https://github.com/gaoxiang12/slambook/tree/master/project/0.3" target="_blank" rel="external">slambook code</a></li>
+<li><a href="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/slam/OpenCV3book.pdf" target="_blank" rel="external">OpenCV3.0</a></li>
+<li><a href="https://blog.csdn.net/OnafioO/article/details/73175835" target="_blank" rel="external">SLAM前世今生</a></li>
+<li><a href="https://github.com/RainerKuemmerle/g2o" target="_blank" rel="external">g2o Github</a></li>
+<li><a href="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/slam/g2o-details.pdf" target="_blank" rel="external">g2o details</a></li>
+<li><a href="https://blog.csdn.net/u012700322/article/details/52857244" target="_blank" rel="external">g2o译文</a></li>
+<li><a href="https://www.cnblogs.com/gaoxiang12/p/5304272.html" target="_blank" rel="external">深入理解图优化与g2o：g2o篇</a></li>
+<li><a href="https://github.com/RainerKuemmerle/g2o" target="_blank" rel="external">深入理解图优化与g2o：g2o篇 code</a></li>
+<li><a href="https://me.csdn.net/heyijia0327" target="_blank" rel="external">白巧克力亦唯心的博客</a></li>
+<li><a href="http://www.360doc.com/content/17/0718/14/44420101_672315705.shtml" target="_blank" rel="external">Graph slam学习</a></li>
+</ul>
+<a id="more"></a>
+<h2 id="g2o漫谈"><a href="#g2o漫谈" class="headerlink" title="g2o漫谈"></a><a href="https://openslam-org.github.io/g2o.html" target="_blank" rel="external">g2o</a>漫谈</h2><p>g2o里面有各种各样的求解器，而它的顶点、边的类型多种多样。通过自定义顶点和边，事实上，只要一个优化问题能够表达成图，就可以用g2o去求解它。常见的，比如bundle adjustment，ICP，数据拟合等。g2o是一个C++项目，其中矩阵数据结构多来自Eigen。</p>
+<p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/slam/g2o.png" alt=""></p>
+<p>先看上部分，SparseOptimizer是我们需要维护的东西，是一个Optimizable Graph，也是一个Hyper Graph。一个SparseOptimizer含有很多个顶点（继承与Base Vertex）和多条边（继承自BaseUnaryEdge，BaseBinaryEdge或BaseMultiEdge）。这些Base Vertex和Base Edge都是抽象的基类，而实际用的顶点和边，都是它们的派生类。</p>
+<p>我们用SparseOptimizer.addVertex 和 SparseOptimizer.addEdge 向图中添加顶点和边，然后调用SpaseOptimizer.optimize来优化。</p>
+<p>在优化前，需要指定我们用的求解器和迭代算法。从图下半部分来看，一个SparseOptimization拥有一个Optimization Algorithm,继承自Gusss-Newton，Levernberg-Marquardt，Powell’s dogleg 三者之一，同时拥有一个Solver，含有俩个部分。一个是SparseBlockMatrix，用于计算稀疏的雅克比和海塞；一个用于计算 <script type="math/tex">H\Delta x = -b</script>，需要一个线性方程的求解器。而这个求解器，可以从PCG，CSparse，Choldmod三者选一。<br>则一共三个步骤：</p>
+<ol>
+<li>选择一个线性方程求解器，从 PCG, CSparse, Choldmod中选</li>
+<li>选择一个 BlockSolver</li>
+<li>选择一个迭代策略，从GN, LM, Doglog中选</li>
+</ol>
+<h3 id="BlockSolver，块求解器"><a href="#BlockSolver，块求解器" class="headerlink" title="BlockSolver，块求解器"></a>BlockSolver，块求解器</h3><p>块求解器是包含线性求解器的存在，之所以是包含，是因为块求解器会构建好线性求解器所需要的矩阵块（也就是<script type="math/tex">H</script>和<script type="math/tex">b</script>，<script type="math/tex">H\Delta x = -b</script>），之后给线性求解器让它进行运算，边的jacobian也就是在这个时候发挥了自己的光和热。</p>
+<p>这里再记录下一个比较容易混淆的问题，也就是在初始化块求解器的时候的参数问题。大部分的例程在初始化块求解器的时候都会使用如下的程序代码：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">std</span>::<span class="built_in">unique_ptr</span>&lt;g2o::BlockSolver_6_3::LinearSolverType&gt; linearSolver = g2o::make_unique&lt;g2o::LinearSolverCholmod&lt;g2o::BlockSolver_6_3::PoseMatrixType&gt;&gt;();</div></pre></td></tr></table></figure></p>
+<p>其中的BlockSolver_6_3有两个参数，分别是6和3，在定义的时候可以看到这是一个模板的重命名（模板类的重命名只能用using）<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">int</span> p, <span class="keyword">int</span> l&gt;  </div><div class="line"><span class="keyword">using</span> BlockSolverPL = BlockSolver&lt; BlockSolverTraits&lt;p, l&gt; &gt;;</div></pre></td></tr></table></figure></p>
+<p>其中<strong>p代表pose的维度，l表示landmark的维度</strong>，且这里都表示的是增量的维度。</p>
+<h3 id="g2o的顶点（Vertex）"><a href="#g2o的顶点（Vertex）" class="headerlink" title="g2o的顶点（Vertex）"></a>g2o的顶点（Vertex）</h3><ul>
+<li><code>g2o::BaseVertex&lt; D, T &gt;</code> 其中 <code>int D, typename T</code></li>
+</ul>
+<p>首先记录一下定义模板的两个参数D和T，两个类型分别是int和typename的类型，D表示的是维度，g2o源码里面是这个注释的:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> Dimension = D; <span class="comment">//&lt; dimension of the estimate (minimal) in the manifold space</span></div></pre></td></tr></table></figure>
+<p>可以看到这个D并非是顶点（更确切的说是状态变量）的维度，而是其在流形空间（manifold）的最小表示，这里一定要区别开；之后是T，源码里面也给出了T的作用:</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> T EstimateType;</div><div class="line">EstimateType <span class="number">_</span>estimate;</div></pre></td></tr></table></figure>
+<p>可以看到，这里T就是顶点（状态变量）的类型。在顶点的继承中，这两个参数是直接面向我们的，所以务必要定义妥当。</p>
+<h3 id="g2o的边（Edge）"><a href="#g2o的边（Edge）" class="headerlink" title="g2o的边（Edge）"></a>g2o的边（Edge）</h3><ul>
+<li><code>g2o::BaseBinaryEdge&lt; D, E, VertexXi, VertexXj &gt;</code> 其中 <code>int D, typename E</code></li>
+</ul>
+<p>首先还是介绍这两个参数，还是从源码上来看：</p>
+<figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">static</span> <span class="keyword">const</span> <span class="keyword">int</span> Dimension = D;</div><div class="line"><span class="keyword">typedef</span> E Measurement;</div><div class="line"><span class="keyword">typedef</span> Eigen::Matrix&lt;<span class="keyword">number_t</span>, D, <span class="number">1</span>, Eigen::ColMajor&gt; ErrorVector;</div></pre></td></tr></table></figure>
+<p>可以看到，D决定了误差的维度，从映射的角度讲，三维情况下就是2维的，二维的情况下是1维的；然后E是measurement的类型，也就是测量值是什么类型的，这里E就是什么类型的（一般都是Eigen::VectorN表示的，N是自然数）。</p>
+<ul>
+<li><code>typename VertexXi</code>, <code>typename VertexXj</code></li>
+</ul>
+<p>这两个参数就是边连接的两个顶点的类型，这里特别注意一下，这两个必须一定是顶点的类型，也就是继承自<code>BaseVertex</code>等基础类的类！不是顶点的数据类！例如必须是<code>VertexSE3Expmap</code>而不是<code>VertexSE3Expmap</code>的数据类型类<code>SE3Quat</code>。原因的话源码里面也很清楚，因为后面会用到一系列顶点的维度等等的属性，这些属性是数据类型类里面没有的。</p>
+<ul>
+<li><code>_jacobianOplusXi</code>，<code>_jacobianOplusXj</code></li>
+</ul>
+<p>在成员函数<code>linearizeOplus()</code>（线性化函数）中维护着这两个量，<code>_jacobianOplusXi</code>和<code>_jacobianOplusXj</code>就是所谓的雅可比矩阵，如果是二元边的话二者都有；若为一元边，只有<code>_jacobianOplusXi</code>。</p>
+<p>这两个变量本质上是Eigen::Matrix类型的，具体定义在这里：<br><figure class="highlight c"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">typedef</span> <span class="keyword">typename</span> Eigen::Matrix&lt;<span class="keyword">number_t</span>, D, Di, D==<span class="number">1</span>?Eigen::RowMajor:Eigen::ColMajor&gt;::AlignedMapType JacobianXiOplusType;</div><div class="line"><span class="keyword">typedef</span> <span class="keyword">typename</span> Eigen::Matrix&lt;<span class="keyword">number_t</span>, D, Dj, D==<span class="number">1</span>?Eigen::RowMajor:Eigen::ColMajor&gt;::AlignedMapType JacobianXjOplusType;</div><div class="line">JacobianXiOplusType <span class="number">_</span>jacobianOplusXi;</div><div class="line">JacobianXjOplusType <span class="number">_</span>jacobianOplusXj;</div></pre></td></tr></table></figure></p>
+<hr>
+<p>to be continued…</p>
+<h2 id="参考文献"><a href="#参考文献" class="headerlink" title="参考文献"></a>参考文献</h2><ul>
+<li><a href="https://blog.csdn.net/Hansry/article/details/78080807" target="_blank" rel="external">RGB-D SLAM——g2o篇（三）</a></li>
+</ul>
+
+      
     </div>
+    
+    
+    
+
+    
+
+    
+      <div>
+        <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center;">
+  <div>Thanks for Your Kindly Donation.</div>
+  <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+    <span>Donate</span>
+  </button>
+  <div id="QR" style="display: none;">
+
+    
+      <div id="wechat" style="display: inline-block">
+        <img id="wechat_qr" src="/images/wechat_pay.png" alt="Vincent Qin WeChat Pay"/>
+        <p>WeChat Pay</p>
+      </div>
+    
+
+    
+      <div id="alipay" style="display: inline-block">
+        <img id="alipay_qr" src="/images/ali_pay.png" alt="Vincent Qin Alipay"/>
+        <p>Alipay</p>
+      </div>
+    
+
+    
+
+  </div>
+</div>
+
+      </div>
+    
+
+    
+      <div>
+        <ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>Post author:</strong>
+    Vincent Qin
+  </li>
+  <li class="post-copyright-link">
+    <strong>Post link:</strong>
+    <a href="https://www.vincentqin.tech/posts/slam/" title="资料：SLAM草稿">https://www.vincentqin.tech/posts/slam/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice: </strong>
+    All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/" rel="external nofollow" target="_blank">CC BY-NC-SA 3.0</a> unless stating additionally.
+  </li>
+</ul>
+
+      </div>
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/slam/" rel="tag"><i class="fa fa-star"></i> slam</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/posts/line-segments-detection/" rel="prev" title="资料：Line Segments Detection">
+                资料：Line Segments Detection <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -488,6 +687,19 @@
 
 
           
+
+  
+	
+  
+
+  
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -508,8 +720,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -697,6 +918,22 @@ show_date_time();
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#g2o漫谈"><span class="nav-number">1.</span> <span class="nav-text">g2o漫谈</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#BlockSolver，块求解器"><span class="nav-number">1.1.</span> <span class="nav-text">BlockSolver，块求解器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#g2o的顶点（Vertex）"><span class="nav-number">1.2.</span> <span class="nav-text">g2o的顶点（Vertex）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#g2o的边（Edge）"><span class="nav-number">1.3.</span> <span class="nav-text">g2o的边（Edge）</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#参考文献"><span class="nav-number">2.</span> <span class="nav-text">参考文献</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
 
@@ -862,6 +1099,10 @@ show_date_time();
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.3"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.3"></script>
+
+
 
   
 
