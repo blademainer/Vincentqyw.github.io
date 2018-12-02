@@ -827,7 +827,7 @@ file.txt</code><br>同样可以用二进制设置权限 <code>chmod 444 file.txt
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -1232,6 +1232,11 @@ show_date_time();
         pageSize:'10' || 10,
         visitor: true
     });
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+      item.parentNode.removeChild(item);
+  });
   </script>
 
 

@@ -389,7 +389,7 @@
         
          
         
-        OK! 32 posts in total. Keep on posting.
+        OK! 33 posts in total. Keep on posting.
       </span>
 
       
@@ -413,9 +413,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/posts/build-a-website-using-hexo/" itemprop="url">
+            <a class="post-title-link" href="/posts/AR-applications/" itemprop="url">
               
-                <span itemprop="name">HEXO建站备忘录</span>
+                <span itemprop="name">AR形势与应用</span>
               
             </a>
         
@@ -450,9 +450,9 @@
 
       <h2 class="post-title">
         
-            <a class="post-title-link" href="/posts/AR-applications/" itemprop="url">
+            <a class="post-title-link" href="/posts/build-a-website-using-hexo/" itemprop="url">
               
-                <span itemprop="name">AR形势与应用</span>
+                <span itemprop="name">HEXO建站备忘录</span>
               
             </a>
         
@@ -565,7 +565,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">32</span>
+                  <span class="site-state-item-count">33</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -950,6 +950,11 @@ show_date_time();
         pageSize:'10' || 10,
         visitor: true
     });
+    var infoEle = document.querySelector('#comments .info');
+    if (infoEle && infoEle.childNodes && infoEle.childNodes.length > 0){
+      infoEle.childNodes.forEach(function(item) {
+      item.parentNode.removeChild(item);
+  });
   </script>
 
 
