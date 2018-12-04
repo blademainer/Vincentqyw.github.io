@@ -136,20 +136,20 @@
 
 
 
-<meta name="description" content="首先，解释下SLAM的概念，借鉴高博《视觉 SLAM 十四讲》中的一句话：SLAM 是 Simultaneous Localization and Mapping 的缩写，中文译作“同时定位与地图构建”。它是指搭载特定传感器的主体，在没有环境先验信息的情况下，于运动过程中建立环境的模型，同时估计自己的运动。如果这里的传感器主要为相机，那就称为“视觉 SLAM”。 先来张图，下图就是利用相机作为传感">
+<meta name="description" content="首先，解释下SLAM的概念，借鉴高博《视觉 SLAM 十四讲》中的一句话：SLAM 是 Simultaneous Localization and Mapping 的缩写，中文译作“同时定位与地图构建”。它是指搭载特定传感器的主体，在没有环境先验信息的情况下，于运动过程中建立环境的模型，同时估计自己的运动。如果这里的传感器主要为相机，那就称为“视觉 SLAM”。">
 <meta name="keywords">
 <meta property="og:type" content="article">
 <meta property="og:title" content="资料：ORB SLAM2 阅读报告">
 <meta property="og:url" content="https://www.vincentqin.tech/posts/orb-slam/index.html">
 <meta property="og:site_name" content="Vincent Qin">
-<meta property="og:description" content="首先，解释下SLAM的概念，借鉴高博《视觉 SLAM 十四讲》中的一句话：SLAM 是 Simultaneous Localization and Mapping 的缩写，中文译作“同时定位与地图构建”。它是指搭载特定传感器的主体，在没有环境先验信息的情况下，于运动过程中建立环境的模型，同时估计自己的运动。如果这里的传感器主要为相机，那就称为“视觉 SLAM”。 先来张图，下图就是利用相机作为传感">
+<meta property="og:description" content="首先，解释下SLAM的概念，借鉴高博《视觉 SLAM 十四讲》中的一句话：SLAM 是 Simultaneous Localization and Mapping 的缩写，中文译作“同时定位与地图构建”。它是指搭载特定传感器的主体，在没有环境先验信息的情况下，于运动过程中建立环境的模型，同时估计自己的运动。如果这里的传感器主要为相机，那就称为“视觉 SLAM”。">
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/orb-slam/MH01-traj.gif">
 <meta property="og:image" content="https://raw.githubusercontent.com/Vincentqyw/ORB-SLAM2-CHINESE/master/papers/orb-slam2-mainflow.png">
 <meta property="og:image" content="https://www.vincentqin.tech/posts/orb-slam/MH01-traj.png">
-<meta property="og:updated_time" content="2018-12-03T15:44:11.176Z">
+<meta property="og:updated_time" content="2018-12-04T17:33:10.628Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="资料：ORB SLAM2 阅读报告">
-<meta name="twitter:description" content="首先，解释下SLAM的概念，借鉴高博《视觉 SLAM 十四讲》中的一句话：SLAM 是 Simultaneous Localization and Mapping 的缩写，中文译作“同时定位与地图构建”。它是指搭载特定传感器的主体，在没有环境先验信息的情况下，于运动过程中建立环境的模型，同时估计自己的运动。如果这里的传感器主要为相机，那就称为“视觉 SLAM”。 先来张图，下图就是利用相机作为传感">
+<meta name="twitter:description" content="首先，解释下SLAM的概念，借鉴高博《视觉 SLAM 十四讲》中的一句话：SLAM 是 Simultaneous Localization and Mapping 的缩写，中文译作“同时定位与地图构建”。它是指搭载特定传感器的主体，在没有环境先验信息的情况下，于运动过程中建立环境的模型，同时估计自己的运动。如果这里的传感器主要为相机，那就称为“视觉 SLAM”。">
 <meta name="twitter:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/orb-slam/MH01-traj.gif">
 
 
@@ -442,8 +442,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-03T23:44:11+08:00">
-                2018-12-03
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-05T01:33:10+08:00">
+                2018-12-05
               </time>
             
           </span>
@@ -498,9 +498,9 @@
 
       
         <p>首先，解释下SLAM的概念，借鉴高博《视觉 SLAM 十四讲》中的一句话：SLAM 是 Simultaneous Localization and Mapping 的缩写，中文译作“同时定位与地图构建”。它是指搭载特定传感器的主体，在没有环境先验信息的情况下，于运动过程中建立环境的模型，同时估计自己的运动。如果这里的传感器主要为相机，那就称为“视觉 SLAM”。</p>
+<a id="more"></a>
 <p>先来张图，下图就是利用相机作为传感器在环境中采集一系列的图像，经过SLAM系统建立的点云图以及相机轨迹。</p>
 <p><img src="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/orb-slam/MH01-traj.gif" alt=""></p>
-<a id="more"></a>
 <p>SLAM自1986年提出之后，一直以来是机器人领域的热点问题。这里总结一些常用开源SLAM方案。</p>
 <style>
 table th:nth-of-type(1) {
@@ -726,6 +726,10 @@ table th:nth-of-type(2) {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/posts/LieAlgebra/" rel="next" title="李群与李代数求导">
+                <i class="fa fa-chevron-left"></i> 李群与李代数求导
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
@@ -824,7 +828,7 @@ table th:nth-of-type(2) {
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">34</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>

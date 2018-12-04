@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    <lastmod>2018-12-03T15:57:40.241Z</lastmod>
+    <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
+    <lastmod>2018-12-04T17:33:10.628Z</lastmod>
     <data>
         <display>
-        <title>我是置顶</title>
-        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
+        <title>资料：ORB SLAM2 阅读报告</title>
+        <pubTime>2018-11-30T15:14:30.000Z</pubTime>
         
          
            
@@ -19,12 +19,46 @@
 
     
   <url>
-    <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
-    <lastmod>2018-12-03T15:44:11.176Z</lastmod>
+    <loc>https://www.vincentqin.tech/posts/new-pc/</loc>
+    <lastmod>2018-12-04T17:32:36.496Z</lastmod>
     <data>
         <display>
-        <title>资料：ORB SLAM2 阅读报告</title>
-        <pubTime>2018-11-30T15:14:30.000Z</pubTime>
+        <title>装机只是为了换种心情</title>
+        <pubTime>2018-10-16T15:25:22.000Z</pubTime>
+        
+        <tag>装机</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/LieAlgebra/</loc>
+    <lastmod>2018-12-04T17:31:44.432Z</lastmod>
+    <data>
+        <display>
+        <title>李群与李代数求导</title>
+        <pubTime>2018-12-04T15:40:56.000Z</pubTime>
+        
+        <tag>slam</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    <lastmod>2018-12-03T15:57:40.241Z</lastmod>
+    <data>
+        <display>
+        <title>我是置顶</title>
+        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
         
          
            
@@ -388,23 +422,6 @@
              
               <breadCrumb title="机器学习" url="https://www.vincentqin.tech/categories/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/new-pc/</loc>
-    <lastmod>2018-11-14T15:11:33.443Z</lastmod>
-    <data>
-        <display>
-        <title>装机只是为了换种心情</title>
-        <pubTime>2018-10-16T15:25:22.000Z</pubTime>
-        
-        <tag>装机</tag>
-         
-         
-           
         </display>
     </data>
     </url>
