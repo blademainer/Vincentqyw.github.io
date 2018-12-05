@@ -4,6 +4,23 @@
 
     
   <url>
+    <loc>https://www.vincentqin.tech/posts/LieAlgebra/</loc>
+    <lastmod>2018-12-05T16:41:24.355Z</lastmod>
+    <data>
+        <display>
+        <title>李群与李代数求导</title>
+        <pubTime>2018-12-04T15:40:56.000Z</pubTime>
+        
+        <tag>slam</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
     <lastmod>2018-12-04T17:33:10.628Z</lastmod>
     <data>
@@ -27,23 +44,6 @@
         <pubTime>2018-10-16T15:25:22.000Z</pubTime>
         
         <tag>装机</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/LieAlgebra/</loc>
-    <lastmod>2018-12-04T17:31:44.432Z</lastmod>
-    <data>
-        <display>
-        <title>李群与李代数求导</title>
-        <pubTime>2018-12-04T15:40:56.000Z</pubTime>
-        
-        <tag>slam</tag>
          
          
            
