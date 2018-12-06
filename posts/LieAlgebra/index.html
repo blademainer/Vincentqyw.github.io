@@ -144,7 +144,7 @@
 <meta property="og:site_name" content="Vincent Qin">
 <meta property="og:description" content="最近一段时间在推$Jacobian$，会用到一些关于李代数求导的知识。参考高博《视觉slam十四讲》一书，在此总结一些常用的关于李群与李代数相关的知识点。">
 <meta property="og:image" content="https://www.vincentqin.tech/posts/LieAlgebra/lieGroup.png">
-<meta property="og:updated_time" content="2018-12-05T16:41:24.355Z">
+<meta property="og:updated_time" content="2018-12-06T16:35:53.445Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="李群与李代数求导">
 <meta name="twitter:description" content="最近一段时间在推$Jacobian$，会用到一些关于李代数求导的知识。参考高博《视觉slam十四讲》一书，在此总结一些常用的关于李群与李代数相关的知识点。">
@@ -440,8 +440,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-06T00:41:24+08:00">
-                2018-12-06
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-07T00:35:53+08:00">
+                2018-12-07
               </time>
             
           </span>
@@ -585,7 +585,86 @@ SE(3) = \left\{ \mathbf{T} = \left[ {\begin{array}{*{20}{c}} \mathbf{R} & \mathb
 }^{\color{Red}{上式分块求导}}\\
 &= ({\boldsymbol {Tp}})^{\bigodot}
 \end{aligned}</script><p>上式中运算符号$\bigodot$的含义：将一个齐次坐标的空间点变换成一个$4 \times 6$的矩阵。</p>
+<h2 id="补充"><a href="#补充" class="headerlink" title="补充"></a>补充</h2><h3 id="SE-3-左扰"><a href="#SE-3-左扰" class="headerlink" title="$SE(3)$左扰"></a>$SE(3)$左扰</h3><script type="math/tex; mode=display">
+\begin{aligned}
+\rm{exp}\left( {\Delta \xi } \right){\rm{exp}}\left( \xi  \right)
+& \approx \left( {I + {\left[ {\Delta \xi } \right]}_ \times } \right){\rm{exp}}(\xi) \\
+&= \left( I_{4 \times 4} +
+\left[
+\begin{array}{*{20}{c}}
+{  \left[ \Delta \phi  \right]}_{\times}   &   \Delta \rho    \\
+0&0
+\end{array}
+\right]
+\right)
+\left[
+\begin{array}{*{20}{c}}
+ R   &   t    \\
+0&1
+\end{array}
+\right] \\
+&=
+\left[
+\begin{array}{*{20}{c}}
+{  \left[ \Delta \phi  \right]}_{\times}+I_{3 \times 3}   &   \Delta \rho    \\
+0&1
+\end{array}
+\right]
+\left[
+\begin{array}{*{20}{c}}
+ R   &   t    \\
+0&1
+\end{array}
+\right] \\
+&=
+\left[
+\begin{array}{*{20}{c}}
+ \left( \left[ \Delta \phi  \right]_{\times}+I_{3 \times 3} \right) R  &    \left( \left[ \Delta \phi  \right]_{\times}+I_{3 \times 3} \right) t + \Delta \rho    \\
+0&1
+\end{array}
+\right]
+\end{aligned}</script><h3 id="SE-3-右扰"><a href="#SE-3-右扰" class="headerlink" title="$SE(3)$右扰"></a>$SE(3)$右扰</h3><script type="math/tex; mode=display">
+\begin{aligned}
+\rm{exp}\left( \xi  \right) \rm{exp}\left( {\Delta \xi } \right)
+& \approx {\rm{exp}}(\xi) \left( {I + {\left[ {\Delta \xi } \right]}_ \times } \right)\\
+&=
+\left[
+\begin{array}{*{20}{c}}
+ R   &   t    \\
+0&1
+\end{array}
+\right]
+\left( I_{4 \times 4} +
+\left[
+\begin{array}{*{20}{c}}
+{  \left[ \Delta \phi  \right]}_{\times}   &   \Delta \rho    \\
+0&0
+\end{array}
+\right]
+\right)\\
+&=
+\left[
+\begin{array}{*{20}{c}}
+ R   &   t    \\
+0&1
+\end{array}
+\right]
 
+\left[
+\begin{array}{*{20}{c}}
+{  \left[ \Delta \phi  \right]}_{\times}+I_{3 \times 3}   &   \Delta \rho    \\
+0&1
+\end{array}
+\right] \\
+&=
+\left[
+\begin{array}{*{20}{c}}
+ R \left( \left[ \Delta \phi  \right]_{\times}+I_{3 \times 3} \right)  &   R \Delta \rho + t   \\
+0&1
+\end{array}
+\right]
+
+\end{aligned}</script>
       
     </div>
     
@@ -933,7 +1012,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊正交群与特殊欧式群"><span class="nav-number">2.</span> <span class="nav-text">特殊正交群与特殊欧式群</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#李代数的引出"><span class="nav-number">3.</span> <span class="nav-text">李代数的引出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#李代数-mathfrak-so-3"><span class="nav-number">4.</span> <span class="nav-text">李代数 $\mathfrak{so}(3)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#李代数-mathfrak-se-3"><span class="nav-number">5.</span> <span class="nav-text">李代数 $\mathfrak{se}(3)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指数映射"><span class="nav-number">6.</span> <span class="nav-text">指数映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#李代数求导"><span class="nav-number">7.</span> <span class="nav-text">李代数求导</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对旋转矩阵李代数求导"><span class="nav-number">7.1.</span> <span class="nav-text">对旋转矩阵李代数求导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变换转矩阵李代数求导"><span class="nav-number">7.2.</span> <span class="nav-text">变换转矩阵李代数求导</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#特殊正交群与特殊欧式群"><span class="nav-number">2.</span> <span class="nav-text">特殊正交群与特殊欧式群</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#李代数的引出"><span class="nav-number">3.</span> <span class="nav-text">李代数的引出</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#李代数-mathfrak-so-3"><span class="nav-number">4.</span> <span class="nav-text">李代数 $\mathfrak{so}(3)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#李代数-mathfrak-se-3"><span class="nav-number">5.</span> <span class="nav-text">李代数 $\mathfrak{se}(3)$</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#指数映射"><span class="nav-number">6.</span> <span class="nav-text">指数映射</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#李代数求导"><span class="nav-number">7.</span> <span class="nav-text">李代数求导</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#对旋转矩阵李代数求导"><span class="nav-number">7.1.</span> <span class="nav-text">对旋转矩阵李代数求导</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#变换转矩阵李代数求导"><span class="nav-number">7.2.</span> <span class="nav-text">变换转矩阵李代数求导</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#补充"><span class="nav-number">8.</span> <span class="nav-text">补充</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SE-3-左扰"><span class="nav-number">8.1.</span> <span class="nav-text">$SE(3)$左扰</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#SE-3-右扰"><span class="nav-number">8.2.</span> <span class="nav-text">$SE(3)$右扰</span></a></li></ol></li></ol></div>
             
 
           </div>
