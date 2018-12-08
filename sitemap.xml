@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.vincentqin.tech/schedule/index.html</loc>
+    
+    <lastmod>2018-12-08T15:58:08.808Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    
+    <lastmod>2018-12-08T15:46:59.130Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.vincentqin.tech//404.html</loc>
     
     <lastmod>2018-12-07T15:12:13.702Z</lastmod>
@@ -26,13 +40,6 @@
     <loc>https://www.vincentqin.tech/posts/new-pc/</loc>
     
     <lastmod>2018-12-04T17:32:36.496Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    
-    <lastmod>2018-12-03T15:57:40.241Z</lastmod>
     
   </url>
   
@@ -243,13 +250,6 @@
     <loc>https://www.vincentqin.tech/collections/index.html</loc>
     
     <lastmod>2018-06-03T08:20:39.585Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/schedule/index.html</loc>
-    
-    <lastmod>2018-05-25T15:35:35.242Z</lastmod>
     
   </url>
   

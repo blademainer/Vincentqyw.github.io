@@ -5,6 +5,22 @@
     
     
   <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    <lastmod>2018-12-08T15:46:59.130Z</lastmod>
+    <data>
+        <display>
+        <title>我是置顶</title>
+        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
     <loc>https://www.vincentqin.tech/posts/LieAlgebra/</loc>
     <lastmod>2018-12-06T16:35:53.445Z</lastmod>
     <data>
@@ -46,21 +62,6 @@
         
         <tag>装机</tag>
          
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    <lastmod>2018-12-03T15:57:40.241Z</lastmod>
-    <data>
-        <display>
-        <title>我是置顶</title>
-        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
-        
          
            
         </display>
@@ -723,7 +724,6 @@
     </data>
     </url>
 
-    
     
     
     
