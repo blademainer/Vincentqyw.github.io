@@ -5,84 +5,73 @@
     
     
   <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    <lastmod>2018-12-08T15:46:59.130Z</lastmod>
-    <data>
-        <display>
-        <title>我是置顶</title>
-        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
     <loc>https://www.vincentqin.tech/posts/LieAlgebra/</loc>
-    <lastmod>2018-12-06T16:35:53.445Z</lastmod>
+    <lastmod>2018-12-09T15:11:12.765Z</lastmod>
     <data>
         <display>
-        <title>李群与李代数求导</title>
+        <title>笔记：李群与李代数求导</title>
         <pubTime>2018-12-04T15:40:56.000Z</pubTime>
         
-        <tag>slam</tag>
+        <tag>SLAM</tag>
          
+        <tag>computer vision</tag>
          
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
-    <lastmod>2018-12-04T17:33:10.628Z</lastmod>
-    <data>
-        <display>
-        <title>资料：ORB SLAM2 阅读报告</title>
-        <pubTime>2018-11-30T15:14:30.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/new-pc/</loc>
-    <lastmod>2018-12-04T17:32:36.496Z</lastmod>
-    <data>
-        <display>
-        <title>装机只是为了换种心情</title>
-        <pubTime>2018-10-16T15:25:22.000Z</pubTime>
-        
-        <tag>装机</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/slam/</loc>
-    <lastmod>2018-11-29T17:29:17.133Z</lastmod>
-    <data>
-        <display>
-        <title>资料：SLAM草稿</title>
-        <pubTime>2018-11-29T16:53:00.000Z</pubTime>
-        
-        <tag>slam</tag>
+        <tag>李代数</tag>
          
          
            
              
-              <breadCrumb title="计算机视觉" url="https://www.vincentqin.tech/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+              <breadCrumb title="SLAM" url="https://www.vincentqin.tech/categories/SLAM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/SIFT-and-SURF/</loc>
+    <lastmod>2018-12-09T15:08:33.768Z</lastmod>
+    <data>
+        <display>
+        <title>SIFT和SURF特性提取总结</title>
+        <pubTime>2017-10-01T02:18:01.000Z</pubTime>
+        
+        <tag>sift</tag>
+         
+        <tag>surf</tag>
+         
+        <tag>特征提取</tag>
+         
+         
+           
+             
+              <breadCrumb title="CV" url="https://www.vincentqin.tech/categories/CV/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/new-hci-lightfield-datasets/</loc>
+    <lastmod>2018-12-09T15:07:53.659Z</lastmod>
+    <data>
+        <display>
+        <title>初试HCI光场数据集</title>
+        <pubTime>2017-04-30T06:22:20.000Z</pubTime>
+        
+        <tag>Light Field</tag>
+         
+        <tag>光场</tag>
+         
+        <tag>计算成像</tag>
+         
+        <tag>点云Point Cloud</tag>
+         
+         
+           
+             
+              <breadCrumb title="光场" url="https://www.vincentqin.tech/categories/%E5%85%89%E5%9C%BA/"/>
           
         </display>
     </data>
@@ -91,7 +80,7 @@
     
   <url>
     <loc>https://www.vincentqin.tech/posts/lytro-light-field/</loc>
-    <lastmod>2018-11-18T14:34:02.269Z</lastmod>
+    <lastmod>2018-12-09T15:07:21.174Z</lastmod>
     <data>
         <display>
         <title>Lytro的光场AR之路：从巅峰到死亡</title>
@@ -106,7 +95,119 @@
          
            
              
-              <breadCrumb title="计算机视觉" url="https://www.vincentqin.tech/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+              <breadCrumb title="光场" url="https://www.vincentqin.tech/categories/%E5%85%89%E5%9C%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/light-field-depth-estimation/</loc>
+    <lastmod>2018-12-09T15:06:59.507Z</lastmod>
+    <data>
+        <display>
+        <title>Light Field Depth Estimation</title>
+        <pubTime>2018-05-16T05:35:54.000Z</pubTime>
+        
+        <tag>depth estimation</tag>
+         
+        <tag>light field</tag>
+         
+         
+           
+             
+              <breadCrumb title="光场" url="https://www.vincentqin.tech/categories/%E5%85%89%E5%9C%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/line-segments-detection/</loc>
+    <lastmod>2018-12-09T15:05:49.466Z</lastmod>
+    <data>
+        <display>
+        <title>资料：Line Segments Detection</title>
+        <pubTime>2018-11-18T07:11:20.000Z</pubTime>
+        
+        <tag>cv</tag>
+         
+        <tag>line segment</tag>
+         
+        <tag>detection</tag>
+         
+         
+           
+             
+              <breadCrumb title="CV" url="https://www.vincentqin.tech/categories/CV/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
+    <lastmod>2018-12-09T15:03:37.777Z</lastmod>
+    <data>
+        <display>
+        <title>资料：ORB SLAM2 阅读报告</title>
+        <pubTime>2018-11-30T15:14:30.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="SLAM" url="https://www.vincentqin.tech/categories/SLAM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/slam/</loc>
+    <lastmod>2018-12-09T15:00:49.691Z</lastmod>
+    <data>
+        <display>
+        <title>资料：SLAM草稿</title>
+        <pubTime>2018-11-29T16:53:00.000Z</pubTime>
+        
+        <tag>SLAM</tag>
+         
+        <tag>AR</tag>
+         
+        <tag>cv</tag>
+         
+        <tag>computer vision</tag>
+         
+         
+           
+             
+              <breadCrumb title="SLAM" url="https://www.vincentqin.tech/categories/SLAM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/eigen/</loc>
+    <lastmod>2018-12-09T15:00:29.344Z</lastmod>
+    <data>
+        <display>
+        <title>资料：Eigen与Matlab语句之对应关系</title>
+        <pubTime>2018-08-25T17:59:37.000Z</pubTime>
+        
+        <tag>SLAM</tag>
+         
+        <tag>Eigen</tag>
+         
+         
+           
+             
+              <breadCrumb title="SLAM" url="https://www.vincentqin.tech/categories/SLAM/"/>
           
         </display>
     </data>
@@ -115,7 +216,7 @@
     
   <url>
     <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
-    <lastmod>2018-11-18T10:26:57.157Z</lastmod>
+    <lastmod>2018-12-09T13:35:50.505Z</lastmod>
     <data>
         <display>
         <title>HEXO建站备忘录</title>
@@ -134,6 +235,40 @@
              
               <breadCrumb title="建站" url="https://www.vincentqin.tech/categories/%E5%BB%BA%E7%AB%99/"/>
           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    <lastmod>2018-12-08T15:46:59.130Z</lastmod>
+    <data>
+        <display>
+        <title>我是置顶</title>
+        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/new-pc/</loc>
+    <lastmod>2018-12-04T17:32:36.496Z</lastmod>
+    <data>
+        <display>
+        <title>装机只是为了换种心情</title>
+        <pubTime>2018-10-16T15:25:22.000Z</pubTime>
+        
+        <tag>装机</tag>
+         
+         
+           
         </display>
     </data>
     </url>
@@ -159,27 +294,6 @@
 
     
   <url>
-    <loc>https://www.vincentqin.tech/posts/line-segments-detection/</loc>
-    <lastmod>2018-11-18T09:32:24.430Z</lastmod>
-    <data>
-        <display>
-        <title>资料：Line Segments Detection</title>
-        <pubTime>2018-11-18T07:11:20.000Z</pubTime>
-        
-        <tag>cv</tag>
-         
-        <tag>line segment</tag>
-         
-        <tag>detection</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://www.vincentqin.tech/posts/stephen-hawking/</loc>
     <lastmod>2018-11-14T16:28:20.735Z</lastmod>
     <data>
@@ -191,32 +305,6 @@
          
          
            
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/new-hci-lightfield-datasets/</loc>
-    <lastmod>2018-11-14T16:06:21.075Z</lastmod>
-    <data>
-        <display>
-        <title>初试HCI光场数据集</title>
-        <pubTime>2017-04-30T06:22:20.000Z</pubTime>
-        
-        <tag>Light Field</tag>
-         
-        <tag>光场</tag>
-         
-        <tag>计算成像</tag>
-         
-        <tag>点云Point Cloud</tag>
-         
-         
-           
-             
-              <breadCrumb title="计算机视觉" url="https://www.vincentqin.tech/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
-          
         </display>
     </data>
     </url>
@@ -277,13 +365,13 @@
         <title>Matlab Deep Learning学习笔记</title>
         <pubTime>2017-11-18T17:22:40.000Z</pubTime>
         
-        <tag>CNN</tag>
-         
-        <tag>CIFAR10</tag>
-         
         <tag>Deep Learning</tag>
          
         <tag>Matlab</tag>
+         
+        <tag>CNN</tag>
+         
+        <tag>CIFAR10</tag>
          
          
            
@@ -380,30 +468,6 @@
 
     
   <url>
-    <loc>https://www.vincentqin.tech/posts/SIFT-and-SURF/</loc>
-    <lastmod>2018-11-14T15:14:54.730Z</lastmod>
-    <data>
-        <display>
-        <title>SIFT和SURF特性提取总结</title>
-        <pubTime>2017-10-01T02:18:01.000Z</pubTime>
-        
-        <tag>sift</tag>
-         
-        <tag>surf</tag>
-         
-        <tag>特征提取</tag>
-         
-         
-           
-             
-              <breadCrumb title="计算机视觉" url="https://www.vincentqin.tech/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://www.vincentqin.tech/posts/pca/</loc>
     <lastmod>2018-11-14T15:12:51.482Z</lastmod>
     <data>
@@ -469,28 +533,6 @@
            
              
               <breadCrumb title="Linux" url="https://www.vincentqin.tech/categories/Linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/light-field-depth-estimation/</loc>
-    <lastmod>2018-11-14T14:57:00.520Z</lastmod>
-    <data>
-        <display>
-        <title>Light Field Depth Estimation</title>
-        <pubTime>2018-05-16T05:35:54.000Z</pubTime>
-        
-        <tag>depth estimation</tag>
-         
-        <tag>light field</tag>
-         
-         
-           
-             
-              <breadCrumb title="计算机视觉" url="https://www.vincentqin.tech/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
           
         </display>
     </data>
@@ -684,28 +726,6 @@
 
     
   <url>
-    <loc>https://www.vincentqin.tech/posts/eigen/</loc>
-    <lastmod>2018-08-25T19:37:37.810Z</lastmod>
-    <data>
-        <display>
-        <title>资料：Eigen与Matlab语句之对应关系</title>
-        <pubTime>2018-08-25T17:59:37.000Z</pubTime>
-        
-        <tag>Eigen</tag>
-         
-        <tag>资料</tag>
-         
-         
-           
-             
-              <breadCrumb title="资料" url="https://www.vincentqin.tech/categories/%E8%B5%84%E6%96%99/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://www.vincentqin.tech/posts/tips-for-fix-errors/</loc>
     <lastmod>2018-08-25T19:37:21.579Z</lastmod>
     <data>
@@ -724,7 +744,6 @@
     </data>
     </url>
 
-    
     
     
     
@@ -747,7 +766,7 @@
          
            
              
-              <breadCrumb title="计算机视觉" url="https://www.vincentqin.tech/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA%E8%A7%86%E8%A7%89/"/>
+              <breadCrumb title="光场" url="https://www.vincentqin.tech/categories/%E5%85%89%E5%9C%BA/"/>
           
         </display>
     </data>
