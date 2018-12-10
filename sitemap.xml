@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.vincentqin.tech/posts/CNN-Architectures/</loc>
+    
+    <lastmod>2018-12-10T14:46:20.062Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/Matlab-Deep-Learning/</loc>
+    
+    <lastmod>2018-12-10T14:45:22.814Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.vincentqin.tech/posts/light-field-depth-estimation/</loc>
     
     <lastmod>2018-12-10T14:37:41.211Z</lastmod>
@@ -124,20 +138,6 @@
     <loc>https://www.vincentqin.tech/posts/lstm/</loc>
     
     <lastmod>2018-11-14T16:04:16.019Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/CNN-Architectures/</loc>
-    
-    <lastmod>2018-11-14T15:57:59.442Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/Matlab-Deep-Learning/</loc>
-    
-    <lastmod>2018-11-14T15:54:31.609Z</lastmod>
     
   </url>
   
