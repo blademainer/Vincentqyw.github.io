@@ -3,6 +3,28 @@
 
 
     
+  <url>
+    <loc>https://www.vincentqin.tech/posts/light-field-depth-estimation/</loc>
+    <lastmod>2018-12-10T14:37:41.211Z</lastmod>
+    <data>
+        <display>
+        <title>Light Field Depth Estimation</title>
+        <pubTime>2018-05-16T05:35:54.000Z</pubTime>
+        
+        <tag>depth estimation</tag>
+         
+        <tag>light field</tag>
+         
+         
+           
+             
+              <breadCrumb title="光场" url="https://www.vincentqin.tech/categories/%E5%85%89%E5%9C%BA/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>https://www.vincentqin.tech/posts/LieAlgebra/</loc>
@@ -14,9 +36,9 @@
         
         <tag>SLAM</tag>
          
-        <tag>computer vision</tag>
-         
         <tag>李代数</tag>
+         
+        <tag>computer vision</tag>
          
          
            
@@ -103,28 +125,6 @@
 
     
   <url>
-    <loc>https://www.vincentqin.tech/posts/light-field-depth-estimation/</loc>
-    <lastmod>2018-12-09T15:06:59.507Z</lastmod>
-    <data>
-        <display>
-        <title>Light Field Depth Estimation</title>
-        <pubTime>2018-05-16T05:35:54.000Z</pubTime>
-        
-        <tag>depth estimation</tag>
-         
-        <tag>light field</tag>
-         
-         
-           
-             
-              <breadCrumb title="光场" url="https://www.vincentqin.tech/categories/%E5%85%89%E5%9C%BA/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://www.vincentqin.tech/posts/line-segments-detection/</loc>
     <lastmod>2018-12-09T15:05:49.466Z</lastmod>
     <data>
@@ -178,9 +178,9 @@
          
         <tag>AR</tag>
          
-        <tag>cv</tag>
-         
         <tag>computer vision</tag>
+         
+        <tag>cv</tag>
          
          
            
@@ -282,9 +282,9 @@
         <title>立体视觉综述：Stereo Vision Overview</title>
         <pubTime>2018-03-26T07:03:55.000Z</pubTime>
         
-        <tag>stereo matching</tag>
-         
         <tag>computer vision</tag>
+         
+        <tag>stereo matching</tag>
          
          
            
@@ -365,13 +365,13 @@
         <title>Matlab Deep Learning学习笔记</title>
         <pubTime>2017-11-18T17:22:40.000Z</pubTime>
         
-        <tag>Deep Learning</tag>
-         
-        <tag>Matlab</tag>
-         
         <tag>CNN</tag>
          
         <tag>CIFAR10</tag>
+         
+        <tag>Deep Learning</tag>
+         
+        <tag>Matlab</tag>
          
          
            
@@ -547,9 +547,9 @@
         <title>Markdown 学习</title>
         <pubTime>2016-08-08T14:10:22.000Z</pubTime>
         
-        <tag>资料</tag>
-         
         <tag>Markdown</tag>
+         
+        <tag>资料</tag>
          
          
            
