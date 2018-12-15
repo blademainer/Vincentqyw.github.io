@@ -146,7 +146,7 @@
 <meta property="og:image" content="https://qcloud.coding.net/u/vincentqin/p/blogResource/git/raw/master/orb-slam/MH01-traj.gif">
 <meta property="og:image" content="https://raw.githubusercontent.com/Vincentqyw/ORB-SLAM2-CHINESE/master/papers/orb-slam2-mainflow.png">
 <meta property="og:image" content="https://www.vincentqin.tech/posts/orb-slam/MH01-traj.png">
-<meta property="og:updated_time" content="2018-12-09T15:03:37.777Z">
+<meta property="og:updated_time" content="2018-12-15T09:17:50.056Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="资料：ORB SLAM2 阅读报告">
 <meta name="twitter:description" content="首先，解释下SLAM的概念，借鉴高博《视觉 SLAM 十四讲》中的一句话：SLAM 是 Simultaneous Localization and Mapping 的缩写，中文译作“同时定位与地图构建”。它是指搭载特定传感器的主体，在没有环境先验信息的情况下，于运动过程中建立环境的模型，同时估计自己的运动。如果这里的传感器主要为相机，那就称为“视觉 SLAM”。">
@@ -442,8 +442,8 @@
               
                 <span class="post-meta-item-text">Post modified&#58;</span>
               
-              <time title="Post modified" itemprop="dateModified" datetime="2018-12-09T23:03:37+08:00">
-                2018-12-09
+              <time title="Post modified" itemprop="dateModified" datetime="2018-12-15T17:17:50+08:00">
+                2018-12-15
               </time>
             
           </span>
@@ -632,14 +632,14 @@ table th:nth-of-type(2) {
 </table>
 </div>
 <p>ORB-SLAM应该是SLAM最具有代表性的算法，<a href="https://arxiv.org/abs/1610.06475" target="_blank" rel="external">ORB-SLAM2: an Open-Source SLAM System for Monocular, Stereo and RGB-D Cameras；</a> <a href="https://github.com/raulmur/ORB_SLAM2" target="_blank" rel="external"><strong>code；</strong></a> <a href="http://webdiis.unizar.es/~raulmur/orbslam/" target="_blank" rel="external"><strong>主页；</strong></a></p>
-<p>ORB-SLAM 是PTAM 的继承者们中非常有名的一位 [73]。它提出于 2015 年，是现代 SLAM 系统中做的非常完善，非常易用的系统之一（如果不是最完善和易用的话）。ORB-SLAM 代表着主流的特征点 SLAM 的一个高峰。相比于之前的工作，ORB-SLAM 具有以下几条明显的优势：</p>
-<ol>
+<p>ORB-SLAM 是PTAM 的继承者们中非常有名的一位。它提出于 2015 年，是现代 SLAM 系统中做的非常完善，非常易用的系统之一（如果不是最完善和易用的话）。ORB-SLAM 代表着主流的特征点 SLAM 的一个高峰。相比于之前的工作，ORB-SLAM 具有以下几条明显的优势：</p>
+<ul>
 <li>支持单目、双目、RGB-D 三种模式。这使得无论我们拿到了任何一种常见的传感器，都可以先放到 ORB-SLAM 上测试一下，它具有良好的泛用性。</li>
 <li>整个系统围绕 ORB 特征进行计算，包括视觉里程计与回环检测的 ORB 字典。它体现出 ORB 特征是现阶段计算平台的一种优秀的效率与精度之间的折衷方式。ORB不像 SIFT 或 SURF 那样费时，在 CPU 上面即可实时计算；相比 Harris 角点等简单角点特征，又具有良好的旋转和缩放不变性。并且，ORB 提供描述子，使我们在大范围运动时能够进行回环检测和重定位。</li>
 <li>ORB 的回环检测是它的亮点。优秀的回环检测算法保证了 ORB-SLAM 有效地防止累计误差，并且在丢失之后还能迅速找回，这在许多现有的 SLAM 系统中都不够完善。为此，ORB-SLAM 在运行之前必须加载一个很大的 ORB 字典文件。</li>
-<li>ORB-SLAM 创新式地使用了三个线程完成 SLAM：实时跟踪特征点的 Tracking 线程，局部 Bundle Adjustment 的优化线程（Co-visibility Graph，俗称小图），以及全局 Pose Graph 的回环检测与优化线程（Essential Graph 俗称大图）。其中，Tracking线程负责对每张新来的图像提取 ORB 特征点，并与最近的关键帧进行比较，计算特征点的位置并粗略估计相机位姿。小图线程求解一个 Bundle Adjustment 问题，它包括局部空间内的特征点与相机位姿。这个线程负责求解更精细的相机位姿与特征点空间位置。不过，仅有前两个线程，只完成了一个比较好的视觉里程计。第三个线程，也就是大图线程，对全局的地图与关键帧进行回环检测，消除累积误差。由于全局地图中的地图点太多，所以这个线程的优化不包括地图点，而只有相机位姿组成的位姿图。继 PTAM 的双线程结构之后，ORB-SLAM 的三线程结构取得了非常好的跟踪和建图效果，能够保证轨迹与地图的全局一致性。这种三线程结构亦将被后续的研究者认同和采用。</li>
-<li>ORB-SLAM 围绕特征点进行了不少的优化。例如，在 OpenCV 的特征提取基础上保证了特征点的均匀分布；在优化位姿时使用了一种循环优化四遍以得到更多正确匹配的方法；比 PTAM 更为宽松的关键帧选取策略等等。这些细小的改进使得 ORB￾SLAM 具有远超其他方案的鲁棒性：即使对于较差的场景，较差的标定内参，ORB￾SLAM 都能够顺利地工作。</li>
-</ol>
+<li>ORB-SLAM 创新式地使用了三个线程完成 SLAM：实时跟踪特征点的 Tracking 线程，局部 Bundle Adjustment 的优化线程（Co-visibility Graph，俗称小图），以及全局 Pose Graph 的回环检测与优化线程（Essential Graph 俗称大图）。其中，Tracking线程负责对每张新来的图像提取 ORB 特征点，并与最近的关键帧进行比较，计算特征点的位置并粗略估计相机位姿。小图线程求解一个Bundle Adjustment 问题，它包括局部空间内的特征点与相机位姿。这个线程负责求解更精细的相机位姿与特征点空间位置。不过，仅有前两个线程，只完成了一个比较好的视觉里程计。第三个线程，也就是大图线程，对全局的地图与关键帧进行回环检测，消除累积误差。由于全局地图中的地图点太多，所以这个线程的优化不包括地图点，而只有相机位姿组成的位姿图。继 PTAM 的双线程结构之后，ORB-SLAM 的三线程结构取得了非常好的跟踪和建图效果，能够保证轨迹与地图的全局一致性。这种三线程结构亦将被后续的研究者认同和采用。</li>
+<li>ORB-SLAM围绕特征点进行了不少的优化。例如，在OpenCV的特征提取基础上保证了特征点的均匀分布；在优化位姿时使用了一种循环优化四遍以得到更多正确匹配的方法；比PTAM更为宽松的关键帧选取策略等等。这些细小的改进使得 ORB-SLAM 具有远超其他方案的鲁棒性：即使对于较差的场景，较差的标定内参，ORB-SLAM 都能够顺利地工作。</li>
+</ul>
 <p>整个ORB-SLAM系统包括三个部分组成，分别是跟踪（Tracking）、局部建图（Local Mapping）以及回环检测（Loop Closing）模块，它们分别被三个线程并行地进行处理。接下来对这个系统进行介绍。</p>
 <p><img src="https://raw.githubusercontent.com/Vincentqyw/ORB-SLAM2-CHINESE/master/papers/orb-slam2-mainflow.png" alt=""></p>
 <h1 id="理论篇"><a href="#理论篇" class="headerlink" title="理论篇"></a>理论篇</h1><h2 id="跟踪模块"><a href="#跟踪模块" class="headerlink" title="跟踪模块"></a>跟踪模块</h2><p>跟踪（Tracking）是在每帧中粗略地定位相机位姿以及决定何时插入新的关键帧。算法设计了运动模型以及跟踪参考帧模型去大致预测出相机的位姿。如相机跟踪失败（由于遮挡、大幅度运动等），就启动重定位模块对相机进行位置查找。如果已经有了初始位姿以及特征匹配，利用关键帧的Covisibility Graph恢复出局部可见图。之后，局部地图点的匹配可利用重投影实现，随后相机的位姿利用BA来优化。最后，Tracking线程决定是否插入新的关键帧。</p>
@@ -956,7 +956,7 @@ table th:nth-of-type(2) {
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://www.dandyweng.com/" title="DandyWeng" target="_blank">DandyWeng</a>
+                    <a href="https://www.dandyweng.com/" title="DandyWeng" target="_blank">DandyWeng</a>
                   </li>
                 
               </ul>

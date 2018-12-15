@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
+    <lastmod>2018-12-15T09:17:50.056Z</lastmod>
+    <data>
+        <display>
+        <title>资料：ORB SLAM2 阅读报告</title>
+        <pubTime>2018-11-30T15:14:30.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="SLAM" url="https://www.vincentqin.tech/categories/SLAM/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.vincentqin.tech/posts/CNN-Architectures/</loc>
     <lastmod>2018-12-10T14:46:20.062Z</lastmod>
     <data>
@@ -194,24 +212,6 @@
            
              
               <breadCrumb title="CV" url="https://www.vincentqin.tech/categories/CV/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
-    <lastmod>2018-12-09T15:03:37.777Z</lastmod>
-    <data>
-        <display>
-        <title>资料：ORB SLAM2 阅读报告</title>
-        <pubTime>2018-11-30T15:14:30.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="SLAM" url="https://www.vincentqin.tech/categories/SLAM/"/>
           
         </display>
     </data>
