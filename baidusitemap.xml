@@ -3,6 +3,48 @@
 
 
     
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    <lastmod>2018-12-15T16:11:05.776Z</lastmod>
+    <data>
+        <display>
+        <title>我是置顶</title>
+        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
+    <lastmod>2018-12-15T11:46:23.010Z</lastmod>
+    <data>
+        <display>
+        <title>HEXO建站备忘录</title>
+        <pubTime>2016-08-09T04:37:42.000Z</pubTime>
+        
+        <tag>github</tag>
+         
+        <tag>coding</tag>
+         
+        <tag>hexo</tag>
+         
+        <tag>博客</tag>
+         
+         
+           
+             
+              <breadCrumb title="建站" url="https://www.vincentqin.tech/categories/%E5%BB%BA%E7%AB%99/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
   <url>
     <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
     <lastmod>2018-12-15T09:17:50.056Z</lastmod>
@@ -266,47 +308,6 @@
     </url>
 
     
-  <url>
-    <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
-    <lastmod>2018-12-09T13:35:50.505Z</lastmod>
-    <data>
-        <display>
-        <title>HEXO建站备忘录</title>
-        <pubTime>2016-08-09T04:37:42.000Z</pubTime>
-        
-        <tag>github</tag>
-         
-        <tag>coding</tag>
-         
-        <tag>hexo</tag>
-         
-        <tag>博客</tag>
-         
-         
-           
-             
-              <breadCrumb title="建站" url="https://www.vincentqin.tech/categories/%E5%BB%BA%E7%AB%99/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    <lastmod>2018-12-08T15:46:59.130Z</lastmod>
-    <data>
-        <display>
-        <title>我是置顶</title>
-        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
     
     
   <url>
@@ -750,7 +751,6 @@
     </data>
     </url>
 
-    
     
     
   <url>

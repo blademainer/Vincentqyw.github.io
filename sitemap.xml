@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.vincentqin.tech/about/index.html</loc>
+    
+    <lastmod>2018-12-16T08:44:50.431Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    
+    <lastmod>2018-12-15T16:11:05.776Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
+    
+    <lastmod>2018-12-15T11:46:23.010Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.vincentqin.tech/posts/orb-slam/</loc>
     
     <lastmod>2018-12-15T09:17:50.056Z</lastmod>
@@ -86,23 +107,9 @@
   </url>
   
   <url>
-    <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>
-    
-    <lastmod>2018-12-09T13:35:50.505Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.vincentqin.tech/schedule/index.html</loc>
     
     <lastmod>2018-12-08T15:58:08.808Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    
-    <lastmod>2018-12-08T15:46:59.130Z</lastmod>
     
   </url>
   
@@ -250,13 +257,6 @@
     <loc>https://www.vincentqin.tech/posts/tips-for-fix-errors/</loc>
     
     <lastmod>2018-08-25T19:37:21.579Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/about/index.html</loc>
-    
-    <lastmod>2018-04-24T05:54:04.303Z</lastmod>
     
   </url>
   
