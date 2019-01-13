@@ -4,6 +4,21 @@
 
     
   <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    <lastmod>2019-01-13T11:23:20.294Z</lastmod>
+    <data>
+        <display>
+        <title>我是置顶</title>
+        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://www.vincentqin.tech/posts/recent-status/</loc>
     <lastmod>2019-01-13T10:41:03.101Z</lastmod>
     <data>
@@ -18,21 +33,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    <lastmod>2018-12-15T16:11:05.776Z</lastmod>
-    <data>
-        <display>
-        <title>我是置顶</title>
-        <pubTime>2018-06-19T12:15:27.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>https://www.vincentqin.tech/posts/build-a-website-using-hexo/</loc>

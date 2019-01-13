@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.vincentqin.tech/posts/news/</loc>
+    
+    <lastmod>2019-01-13T11:23:20.294Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.vincentqin.tech/posts/recent-status/</loc>
     
     <lastmod>2019-01-13T10:41:03.101Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>https://www.vincentqin.tech/about/index.html</loc>
     
     <lastmod>2018-12-16T08:44:50.431Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.vincentqin.tech/posts/news/</loc>
-    
-    <lastmod>2018-12-15T16:11:05.776Z</lastmod>
     
   </url>
   
